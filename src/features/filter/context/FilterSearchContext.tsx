@@ -114,10 +114,6 @@ export function FilterSearchProvider({ children }: { children: ReactNode }) {
     setSelectedDistance(value);
   }, []);
   
-  // const isFilterPage =
-  //   location.pathname === '/filter' ||
-  //   location.pathname.startsWith('/filter/');
-
   const displayedResults = useMemo(() => {
     const map = mapRef.current;
     if (!map) return results;
